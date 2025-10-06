@@ -1,20 +1,18 @@
-# 🌿 Unsplash Image Explorer (Work in Progress)
+# 🤖 AI-Powered Resume Analyzer (Work in Progress)
 
-A **React + TypeScript + Vite** application to explore images from the **Unsplash API**.  
-This project is currently in **active development**. Core features like **search with debounce** and **infinite scrolling** are implemented, with more enhancements planned.
+A smart web application that helps **both recruiters and job seekers** evaluate resumes using AI.  
+Job seekers can self-analyze their resumes to see how well they match job requirements, while recruiters can quickly screen candidates.  
+Built with **React**, **React Router** and **Puter.js** for seamless AI integration.
 
 ---
 
-## 🚀 Current Features
+## 🚀 Features
 
-- Search Unsplash images with **debounced input**  
-- **Infinite scroll** to load more images while scrolling  
-- Responsive **grid layout** using Tailwind CSS  
-- Photo cards showing photographer details and clickable links to Unsplash  
-- Custom hooks for:
-  - Infinite scrolling
-  - Intersection observer
-  - Debounced search
+- **Resume Upload:** Upload resumes (PDF) for analysis  
+- **AI Evaluation:** Automatically analyze resumes for skills, experience and job fit  
+- **Self-Assessment:** Job seekers can evaluate their own resumes and improve them  
+- **Matching System:** Compare resumes against job requirements for recruiters  
+- **User-Friendly Interface:** Easy navigation between jobs, resumes and results  
 
 ---
 
@@ -22,20 +20,19 @@ This project is currently in **active development**. Core features like **search
 
 | Layer | Technology |
 |-------|------------|
-| Frontend | React, TypeScript, Vite |
+| Frontend | React, React Router |
+| Backend / AI | Puter.js (AI integration) |
 | Styling | Tailwind CSS |
-| Data Fetching | Axios, React Query |
-| API | Unsplash REST API |
-| State & Hooks | Custom hooks for debounce and intersection observer |
+| File Handling | Resume uploads (PDF) |
 
 ---
 
-## 🛠️ Setup & Running Locally
+## 🛠️ Setup Instructions
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/SuriyaSR/unsplash-explorer.git
-cd unsplash-explorer
+git clone https://github.com/SuriyaSR/ai-resume-analyzer.git
+cd ai-resume-analyzer
 ```
 
 2. **Install dependencies**
@@ -43,25 +40,20 @@ cd unsplash-explorer
 npm install
 ```
 
-3. **Create .env file in the root:**
-```bash
-VITE_UNSPLASH_ACCESS_KEY=your_access_key_here
-```
-
-4. **Run development server**
+3. **Run development server**
 ```bash
 npm run dev
 ```
 
-5. **Open in browser:**
+4. **Open in browser:**
 ```bash
 http://localhost:5173
 ```
 
-## ⚡ Planned Features
+## ⚡ Future Enhancements
 
-- Lightbox / modal view for images
-- Category filters (Nature, Travel, Technology, etc.)
-- Dark mode toggle
-- Bookmark favorite images locally
-- Unit & integration testing
+- Add detailed AI scoring metrics for better self-assessment
+- Generate personalized improvement suggestions for candidates
+- Dashboard for recruiters and candidates to track analysis
+- Drag-and-drop resume upload
+- Integration with job portals for automated matching
