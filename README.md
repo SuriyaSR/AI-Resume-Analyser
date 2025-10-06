@@ -1,87 +1,67 @@
-# Welcome to React Router!
+# 🌿 Unsplash Image Explorer (Work in Progress)
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A **React + TypeScript + Vite** application to explore images from the **Unsplash API**.  
+This project is currently in **active development**. Core features like **search with debounce** and **infinite scrolling** are implemented, with more enhancements planned.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+---
 
-## Features
+## 🚀 Current Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- Search Unsplash images with **debounced input**  
+- **Infinite scroll** to load more images while scrolling  
+- Responsive **grid layout** using Tailwind CSS  
+- Photo cards showing photographer details and clickable links to Unsplash  
+- Custom hooks for:
+  - Infinite scrolling
+  - Intersection observer
+  - Debounced search
 
-## Getting Started
+---
 
-### Installation
+## 🧩 Tech Stack
 
-Install the dependencies:
+| Layer | Technology |
+|-------|------------|
+| Frontend | React, TypeScript, Vite |
+| Styling | Tailwind CSS |
+| Data Fetching | Axios, React Query |
+| API | Unsplash REST API |
+| State & Hooks | Custom hooks for debounce and intersection observer |
 
+---
+
+## 🛠️ Setup & Running Locally
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/SuriyaSR/unsplash-explorer.git
+cd unsplash-explorer
+```
+
+2. **Install dependencies**
 ```bash
 npm install
 ```
 
-### Development
+3. **Create .env file in the root:**
+```bash
+VITE_UNSPLASH_ACCESS_KEY=your_access_key_here
+```
 
-Start the development server with HMR:
-
+4. **Run development server**
 ```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
+5. **Open in browser:**
 ```bash
-npm run build
+http://localhost:5173
 ```
 
-## Deployment
+## ⚡ Planned Features
 
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+- Lightbox / modal view for images
+- Category filters (Nature, Travel, Technology, etc.)
+- Dark mode toggle
+- Bookmark favorite images locally
+- Unit & integration testing
